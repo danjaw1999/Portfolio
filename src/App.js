@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import About from "./About";
+import Stack from "./Stack";
 import { IntlProvider } from "react-intl";
 import { messages } from "./intl/intl";
 
@@ -19,6 +20,7 @@ function App() {
       <div className="App">
         <Header />
         <About />
+        <Stack />
       </div>
     </IntlProvider>
   );
