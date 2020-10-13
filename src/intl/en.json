@@ -4,5 +4,18 @@
   "header.message.menu.services": "Services",
   "header.message.menu.resume": "Resume",
   "header.message.menu.portfolio": "Portfolio",
-  "header.message.menu.contact": "Contact"
+  "header.message.menu.contact": "Contact",
+  "header.message.about.discover": "Discover",
+  "header.message.about.aboutMe": "About Me",
+  "header.message.about.longtext": "My name is Daniel Jaworski. I'm a person who like do different challenges. I'm living in Katowice, Poland. I was on a bootcamp of programming at CodersLab, and i ended Frontend and Backend course. I learned a lot of things and it shows me a small world of programming. I have under than year experience as a Junior Web Developer, I'm still learning to build great websites and applications.",
+  "header.message.table.name": "Name: ",
+  "header.message.table.phone": "Phone: ",
+  "header.message.table.experience": "Experience: ",
+  "header.message.table.aexperience": "Under 1 Year",
+  "header.message.table.age": "Age: ",
+  "header.message.table.address": "Address: ",
+  "header.message.table.aaddress": "Katowice, Poland",
+  "header.message.table.freelance": "Freelance: ",
+  "header.message.table.afreelance": "Avalible",
+  "header.message.table.button": "DOWNLOAD CV"
 }

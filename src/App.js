@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Header from "./header";
-import { IntlProvider, FormattedMessage } from "react-intl";
+import Header from "./Header";
+import About from "./About";
+import { IntlProvider } from "react-intl";
 import { messages } from "./intl/intl";
 
 function App() {
@@ -12,11 +13,12 @@ function App() {
   return (
     <IntlProvider locale={locale} messages={messages[locale]}>
       <select id="locale" name="locale" onChange={handleSetLocale}>
-        <option value="pl">pl</option>
         <option value="en">en</option>
+        <option value="pl">pl</option>
       </select>
       <div className="App">
         <Header />
+        <About />
       </div>
     </IntlProvider>
   );

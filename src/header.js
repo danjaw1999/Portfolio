@@ -1,5 +1,5 @@
 import React from "react";
-import { IntlProvider, FormattedMessage } from "react-intl";
+import { FormattedMessage } from "react-intl";
 
 const Header = () => {
   return (
@@ -30,6 +30,11 @@ const Header = () => {
                 </li>
               </ul>
             </div>
+          </div>
+          <div className="nameandphoto">
+            {/* <img>Tu moje zdjęcie</img> */}
+            <span>Jaworski Daniel</span>
+            <p>Javascript-React Developer 💻</p>
           </div>
         </div>
       </div>

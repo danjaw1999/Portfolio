@@ -1,8 +1,21 @@
 {
   "header.message.menu.home": "Strona Główna",
   "header.message.menu.about": "O mnie",
-  "header.message.menu.services": "Stos technologiczny",
+  "header.message.menu.services": "Stack",
   "header.message.menu.resume": "Podsumowanie",
   "header.message.menu.portfolio": "Portfolio",
-  "header.message.menu.contact": "Kontakt"
+  "header.message.menu.contact": "Kontakt",
+  "header.message.about.discover": "Zobacz co potrafię!",
+  "header.message.about.aboutMe": "O Mnie",
+  "header.message.about.longtext": "Nazywam się Daniel Jaworski. Jestem osobą, która lubi robić różne wyzwania. Mieszkam w Katowicach. Byłem na kursie programowania w szkole CodersLab i skończyłem kurs Frontendu jak i Backendu. Nauczyłem się dużo rzeczy, które pokazały mi malutki świat programowania. Posiadam mniej niż rok doświadczenia jako Junior Web Developer. Nadal się uczę by budować strony i aplikacje. ",
+  "header.message.table.name": "Imię i nazwisko: ",
+  "header.message.table.phone": "Telefon: ",
+  "header.message.table.experience": "Doświadczenie: ",
+  "header.message.table.aexperience": "Poniżej 1 roku",
+  "header.message.table.age": "Wiek: ",
+  "header.message.table.address": "Adres: ",
+  "header.message.table.aaddress": "Katowice, Polska",
+  "header.message.table.freelance": "Freelance: ",
+  "header.message.table.afreelance": "Możliwa",
+  "header.message.table.button": "POBIERZ CV"
 }
