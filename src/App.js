@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./Header";
 import About from "./About";
 import Stack from "./Stack";
+import Experience from "./Experience";
 import { IntlProvider } from "react-intl";
 import { messages } from "./intl/intl";
 
@@ -21,6 +22,7 @@ function App() {
         <Header />
         <About />
         <Stack />
+        <Experience />
       </div>
     </IntlProvider>
   );
