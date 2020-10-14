@@ -1,10 +1,10 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
-
 const Header = () => {
   return (
     <header>
       <div className="darker-video">
+
         <div className="container">
           <div className="upperSiteHeader">
             <div className="left-site">Jaworski Daniel</div>

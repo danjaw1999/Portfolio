@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import Header from "./Header";
 import About from "./About";
 import Stack from "./Stack";
+import Done from "./Done";
 import Experience from "./Experience";
+import Contact from "./Contact";
+import Footer from "./Footer";
 import { IntlProvider } from "react-intl";
 import { messages } from "./intl/intl";
 
@@ -23,6 +26,9 @@ function App() {
         <About />
         <Stack />
         <Experience />
+        <Done />
+        <Contact />
+        <Footer />
       </div>
     </IntlProvider>
   );

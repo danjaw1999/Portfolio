@@ -40,5 +40,14 @@
   "header.message.exp.course": "Bootcamp CodersLab",
   "header.message.exp.courseYears": "January 2020 - October 2020",
   "header.message.exp.courseProf": "Junior Fullstack Developer",
-  "header.message.exp.courseProf2": "React, Node.js, Javascript, HTML, CSS"
+  "header.message.exp.courseProf2": "React, Node.js, Javascript, HTML, CSS",
+  "done.works": "Recent Works",
+  "done.portf": "My portfolio",
+  "contact.loc": "LOCATION",
+  "contact.ema": "EMAIL",
+  "contact.phone": "PHONE",
+  "contact.button": "SEND MESSAGE",
+  "contact.git": "Get In Touch",
+  "contact.contactMe": "Contact Me",
+  "footer.text": "All Right Reserved © 2020" 
 }
