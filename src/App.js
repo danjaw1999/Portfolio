@@ -17,10 +17,10 @@ function App() {
   };
   return (
     <IntlProvider locale={locale} messages={messages[locale]}>
-      <select id="locale" name="locale" onChange={handleSetLocale}>
+      {/* <select id="locale" name="locale" onChange={handleSetLocale}>
         <option value="en">en</option>
         <option value="pl">pl</option>
-      </select>
+      </select> */}
       <div className="App">
         <Header />
         <About />
