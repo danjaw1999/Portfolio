@@ -23,7 +23,7 @@ function handleClickBurger(e) {
 const Header = () => {
   return (
     <>
-      <video loop muted autoPlay>
+      <video loop muted autoPlay playsInline>
         <source src={video} type="video/mp4" />
       </video>
       <div className="darkVideo"></div>
