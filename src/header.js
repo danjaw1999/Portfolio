@@ -41,7 +41,7 @@ const Header = (props) => {
                 <Router>
                   <ul>
                     <li>
-                      <Link>
+                      <Link style={{ color: props.color }}>
                         <FormattedMessage id="header.message.menu.home" />
                       </Link>
                     </li>

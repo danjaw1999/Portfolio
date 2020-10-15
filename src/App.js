@@ -3,6 +3,7 @@ import Header from "./header";
 import About from "./About";
 import Stack from "./Stack";
 import Done from "./Done";
+import Setting from "./assets/settingicon.png";
 import Experience from "./Experience";
 import Contact from "./Contact";
 import Footer from "./Footer";
@@ -31,6 +32,9 @@ function App() {
         <option value="#f1a433">orange</option>
       </select> */}
       <div className="App">
+        <div className="switchButton">
+          <img src={Setting} />
+        </div>
         <Header color={color} />
         <About color={color} />
         <Stack color={color} />
