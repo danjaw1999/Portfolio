@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Header from "./Header";
+import Header from "./header";
 import About from "./About";
 import Stack from "./Stack";
 import Done from "./Done";

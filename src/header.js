@@ -1,5 +1,9 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
+import {
+  BrowserRouter as Router,
+  Link
+} from "react-router-dom";
 import video from "./assets/video.mp4";
 function handleClickBurger(e) {
   const burger = document.querySelector(".burger");
@@ -14,7 +18,7 @@ function handleClickBurger(e) {
     } else {
       link.style.animation = `navLinkFade 0.5s ease forwards ${
         index / 7 + 0.3
-      }s`;
+        }s`;
     }
   });
   burger.classList.toggle("toggle");
@@ -32,40 +36,43 @@ const Header = () => {
           <div className="upperSiteHeader">
             <div className="magPag">
               <div className="left-site"><span>
-              Jaworski</span> Daniel</div>
+                Jaworski</span> Daniel</div>
               <div className="nav-bar">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <FormattedMessage id="header.message.menu.home" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <FormattedMessage id="header.message.menu.about" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <FormattedMessage id="header.message.menu.services" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <FormattedMessage id="header.message.menu.resume" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <FormattedMessage id="header.message.menu.portfolio" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <FormattedMessage id="header.message.menu.contact" />
-                    </a>
-                  </li>
-                </ul>
+                <Router>
+
+                  <ul>
+                    <li>
+                      <Link>
+                        <FormattedMessage id="header.message.menu.home" />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link>
+                        <FormattedMessage id="header.message.menu.about" />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link>
+                        <FormattedMessage id="header.message.menu.services" />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link>
+                        <FormattedMessage id="header.message.menu.resume" />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link>
+                        <FormattedMessage id="header.message.menu.portfolio" />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link>
+                        <FormattedMessage id="header.message.menu.contact" />
+                      </Link>
+                    </li>
+                  </ul>
+                </Router>
               </div>
               <div className="burger" onClick={handleClickBurger}>
                 <div className="line1"></div>
