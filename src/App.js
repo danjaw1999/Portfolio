@@ -15,20 +15,29 @@ function App() {
     const value = e.target.value;
     setLocale(value);
   };
+  const [color, setColor] = useState("#fdd05a");
+  const handleSetColor = (ev) => {
+    const color = ev.target.value;
+    setColor(color);
+  };
   return (
     <IntlProvider locale={locale} messages={messages[locale]}>
       {/* <select id="locale" name="locale" onChange={handleSetLocale}>
         <option value="en">en</option>
         <option value="pl">pl</option>
       </select> */}
+      {/* <select id="color" name="color" onChange={handleSetColor}>
+        <option value="#fdd05a">yellow</option>
+        <option value="#f1a433">orange</option>
+      </select> */}
       <div className="App">
-        <Header />
-        <About />
-        <Stack />
-        <Experience />
-        <Done />
-        <Contact />
-        <Footer />
+        <Header color={color} />
+        <About color={color} />
+        <Stack color={color} />
+        <Experience color={color} />
+        <Done color={color} />
+        <Contact color={color} />
+        <Footer color={color} />
       </div>
     </IntlProvider>
   );

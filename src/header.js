@@ -1,10 +1,8 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
-import {
-  BrowserRouter as Router,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import video from "./assets/video.mp4";
+import face from "./assets/face.jpg";
 function handleClickBurger(e) {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-bar");
@@ -18,13 +16,13 @@ function handleClickBurger(e) {
     } else {
       link.style.animation = `navLinkFade 0.5s ease forwards ${
         index / 7 + 0.3
-        }s`;
+      }s`;
     }
   });
   burger.classList.toggle("toggle");
 }
 
-const Header = () => {
+const Header = (props) => {
   return (
     <>
       <video loop muted autoPlay playsInline>
@@ -35,11 +33,12 @@ const Header = () => {
         <div className="container">
           <div className="upperSiteHeader">
             <div className="magPag">
-              <div className="left-site"><span>
-                Jaworski</span> Daniel</div>
+              <div className="left-site">
+                <span>Jaworski</span>
+                <span style={{ color: props.color }}>Daniel</span>
+              </div>
               <div className="nav-bar">
                 <Router>
-
                   <ul>
                     <li>
                       <Link>
@@ -75,15 +74,24 @@ const Header = () => {
                 </Router>
               </div>
               <div className="burger" onClick={handleClickBurger}>
-                <div className="line1"></div>
-                <div className="line2"></div>
-                <div className="line3"></div>
+                <div
+                  className="line1"
+                  style={{ backgroundColor: props.color }}
+                ></div>
+                <div
+                  className="line2"
+                  style={{ backgroundColor: props.color }}
+                ></div>
+                <div
+                  className="line3"
+                  style={{ backgroundColor: props.color }}
+                ></div>
               </div>
             </div>
           </div>
           <div className="nameandphoto">
-            {/* <img>Tu moje zdjęcie</img> */}
-            <span>Jaworski Daniel</span>
+            <img src={face}></img>
+            <span style={{ color: props.color }}>Jaworski Daniel</span>
             <p>Javascript-React Developer 💻</p>
           </div>
         </div>
