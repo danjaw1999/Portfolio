@@ -9,9 +9,9 @@ import react from "./assets/react.png";
 import npm from "./assets/npm.png";
 import gulp from "./assets/gulp.png";
 import mongo from "./assets/mongo.png";
-import php from "./assets/php.png";
+import php from "./assets/php.jpg";
 import babel from "./assets/babel.png";
-import webpack from "./assets/webpack.png";
+import webpack from "./assets/webpack.jpg";
 
 const Stack = (props) => {
   return (
