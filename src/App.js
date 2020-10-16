@@ -16,7 +16,7 @@ function App() {
     const value = e.target.value;
     setLocale(value);
   };
-  const [color, setColor] = useState("#fdd05a");
+  const [color, setColor] = useState("#dc3545");
   const handleSetColor = (ev) => {
     const color = ev.target.value;
     setColor(color);
@@ -30,6 +30,10 @@ function App() {
       <select id="color" name="color" onChange={handleSetColor}>
         <option value="#fdd05a">yellow</option>
         <option value="#f1a433">orange</option>
+        <option value="#6610f2">purple</option>
+        <option value="#28a745">green</option>
+        <option value="#e83e8c">pink</option>
+        <option value="#dc3545">red</option>
       </select>
       <div className="App">
         <div className="switchButton">
