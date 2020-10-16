@@ -298,6 +298,44 @@ header.header {
     }
   }
 }
+.experience {
+  background-color: rgba(31, 34, 51, 0.99);
+  .container {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    .textInExperience {
+      .mainTitle {
+        font-size: 2.5rem;
+        letter-spacing: 0.5rem;
+        font-weight: bold;
+      }
+      .secondaryTitle {
+        font-size: 3rem;
+        color: white;
+        margin-top: -1vh;
+        margin-left: 0.4vh;
+      }
+      hr {
+        width: 50px;
+        margin-top: -2vh;
+        margin-bottom: 2vh;
+        margin-left: 0;
+      }
+    }
+    .cd-container {
+      .cd-timeline-block {
+        p {
+          font-size: 1.5rem;
+        }
+        h2 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
 .switchButton {
   position: fixed;
   top: 30%;

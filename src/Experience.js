@@ -1,24 +1,30 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
 
-const Experience = () => {
+const Experience = (props) => {
   return (
     <div className="experience">
       <div className="container">
         <div className="textInExperience">
-          <span>
+          <span className="mainTitle" style={{ color: props.color }}>
             <FormattedMessage id="header.message.exp.exp" />
           </span>
-          <h2>
+          <h2 className="secondaryTitle">
             <FormattedMessage id="header.message.exp.pod" />
           </h2>
-          <hr></hr>
+          <hr style={{ borderColor: props.color }}></hr>
         </div>
         <section id="cd-timeline" class="cd-container">
           <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-picture"></div>
+            <div
+              class="cd-timeline-img cd-picture"
+              style={{ backgroundColor: props.color }}
+            ></div>
 
-            <div class="cd-timeline-content">
+            <div
+              class="cd-timeline-content"
+              style={{ backgroundColor: props.color }}
+            >
               <h2>Artlook Gallery</h2>
               <div class="timeline-content-info">
                 <span class="timeline-content-info-title">
@@ -43,9 +49,15 @@ const Experience = () => {
             </div>
           </div>
           <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-picture"></div>
+            <div
+              class="cd-timeline-img cd-picture"
+              style={{ backgroundColor: props.color }}
+            ></div>
 
-            <div class="cd-timeline-content">
+            <div
+              class="cd-timeline-content"
+              style={{ backgroundColor: props.color }}
+            >
               <h2>
                 {" "}
                 <FormattedMessage id="header.message.exp.course" />
@@ -63,12 +75,25 @@ const Experience = () => {
               <p>
                 <FormattedMessage id="header.message.exp.courseProf2" />
               </p>
+              <ul class="content-skills">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+              </ul>
             </div>
           </div>
           <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-picture"></div>
+            <div
+              class="cd-timeline-img cd-picture"
+              style={{ backgroundColor: props.color }}
+            ></div>
 
-            <div class="cd-timeline-content">
+            <div
+              class="cd-timeline-content"
+              style={{ backgroundColor: props.color }}
+            >
               <h2>Morele.net</h2>
               <div class="timeline-content-info">
                 <span class="timeline-content-info-title">
@@ -86,9 +111,15 @@ const Experience = () => {
             </div>
           </div>
           <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-picture"></div>
+            <div
+              class="cd-timeline-img cd-picture"
+              style={{ backgroundColor: props.color }}
+            ></div>
 
-            <div class="cd-timeline-content">
+            <div
+              class="cd-timeline-content"
+              style={{ backgroundColor: props.color }}
+            >
               <h2>Selsoft Internet Provider</h2>
               <div class="timeline-content-info">
                 <span class="timeline-content-info-title">
@@ -106,9 +137,15 @@ const Experience = () => {
             </div>
           </div>
           <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-picture"></div>
+            <div
+              class="cd-timeline-img cd-picture"
+              style={{ backgroundColor: props.color }}
+            ></div>
 
-            <div class="cd-timeline-content">
+            <div
+              class="cd-timeline-content"
+              style={{ backgroundColor: props.color }}
+            >
               <h2>Inper Nuevas Tecnologias</h2>
               <div class="timeline-content-info">
                 <span class="timeline-content-info-title">
@@ -126,9 +163,15 @@ const Experience = () => {
             </div>
           </div>
           <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-picture"></div>
+            <div
+              class="cd-timeline-img cd-picture"
+              style={{ backgroundColor: props.color }}
+            ></div>
 
-            <div class="cd-timeline-content">
+            <div
+              class="cd-timeline-content"
+              style={{ backgroundColor: props.color }}
+            >
               <h2>
                 {" "}
                 <FormattedMessage id="header.message.exp.school" />
