@@ -26,8 +26,8 @@ function App() {
       {/* <select id="locale" name="locale" onChange={handleSetLocale}>
         <option value="en">en</option>
         <option value="pl">pl</option>
-      </select> */}
-      {/* <select id="color" name="color" onChange={handleSetColor}>
+      </select>
+      <select id="color" name="color" onChange={handleSetColor}>
         <option value="#fdd05a">yellow</option>
         <option value="#f1a433">orange</option>
       </select> */}

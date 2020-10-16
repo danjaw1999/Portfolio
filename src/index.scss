@@ -21,6 +21,14 @@ body {
   overflow-x: hidden;
   font-size: 10px;
 }
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: white;
+}
 
 video {
   position: absolute;
@@ -137,6 +145,97 @@ header.header {
         color: white;
         font-weight: bolder;
         padding-bottom: 22vh;
+      }
+    }
+  }
+}
+.About {
+  background-color: #1f2233;
+
+  margin-top: -1.5vh;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    .photoInAbout {
+      padding-top: 7rem;
+      img {
+        -webkit-box-shadow: 0px 0px 5px 8px rgba(51, 79, 107, 1);
+        -moz-box-shadow: 0px 0px 5px 8px rgba(51, 79, 107, 1);
+        box-shadow: 0px 0px 5px 8px rgba(51, 79, 107, 1);
+        height: 400px;
+      }
+    }
+    .discover {
+      margin-top: 2rem;
+      .mainTitle {
+        font-size: 4.5rem;
+        font-weight: bold;
+      }
+      .secondaryTitle {
+        font-size: 3rem;
+        color: white;
+        margin-top: -1vh;
+        margin-left: 0.4vh;
+      }
+      hr {
+        width: 50px;
+        margin-left: 0;
+        margin-top: -2vh;
+        margin-bottom: 2vh;
+      }
+      .aboutMe {
+        color: white;
+        font-size: 1.8rem;
+        width: 92%;
+      }
+    }
+    .tableInAbout {
+      display: flex;
+      flex-direction: column;
+      .leftSiteInTable,
+      .rightSiteInTable {
+        font-family: "Open Sans", sans-serif;
+        padding-top: 0.9rem;
+        padding-left: 1rem;
+        padding-bottom: 0.9rem;
+        .tableInputs {
+          font-size: 1.6rem;
+          color: white;
+          .block {
+            display: flex;
+            p {
+              margin-bottom: 0.3rem;
+            }
+            p:nth-of-type(2) {
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+      .rightSiteInTable {
+        margin-top: -2vh;
+      }
+    }
+    .buttonUnderTable {
+      margin-top: 2vh;
+      padding-bottom: 5vh;
+      button {
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        padding: 1.4rem 0;
+        min-width: 155px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0rem;
+        text-align: center;
+        border-style: solid;
+        border-width: 1px;
       }
     }
   }

@@ -1,104 +1,125 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
-
-const About = () => {
+import face from "./assets/face.jpg";
+const About = (props) => {
   return (
     <div className="About">
       <div className="container">
-        <div className="photoInAbout">Tu moje zdjęcie będzie</div>
+        <div className="photoInAbout">
+          <img src={face} />
+        </div>
         <div className="discover">
-          <span>
+          <span style={{ color: props.color }} className="mainTitle">
             {" "}
             <FormattedMessage id="header.message.about.discover" />
           </span>
-          <h2>
+          <h2 className="secondaryTitle">
             {" "}
             <FormattedMessage id="header.message.about.aboutMe" />
           </h2>
-          <hr></hr>
-          <span>
+          <hr style={{ borderColor: props.color }}></hr>
+          <p className="aboutMe">
             {" "}
             <FormattedMessage id="header.message.about.longtext" />
-          </span>
-          <div className="tableInAbout">
+          </p>
+          <div
+            className="tableInAbout"
+            style={{
+              borderWidth: "0.01rem",
+              borderColor: props.color,
+              borderStyle: "solid"
+            }}
+          >
             <div className="leftSiteInTable">
               <div className="tableInputs">
-                <span>
-                  {" "}
-                  <FormattedMessage id="header.message.table.name" />
-                </span>
-                <span>Jaworski Daniel</span>
+                <div className="block">
+                  <p>
+                    <FormattedMessage id="header.message.table.name" />
+                  </p>
+                  <p>Jaworski Daniel</p>
+                </div>
               </div>
               <div className="tableInputs">
-                {" "}
-                <span>
-                  {" "}
-                  <FormattedMessage id="header.message.table.phone" />
-                </span>
-                <span>+48 788684524</span>
+                <div className="block">
+                  <p>
+                    <FormattedMessage id="header.message.table.phone" />
+                  </p>
+                  <p>+48 788684524</p>
+                </div>
               </div>
               <div className="tableInputs">
-                {" "}
-                <span>
-                  {" "}
-                  <FormattedMessage id="header.message.table.experience" />
-                </span>
-                <span>
-                  {" "}
-                  <FormattedMessage id="header.message.table.aexperience" />{" "}
-                </span>
+                <div className="block">
+                  <p>
+                    {" "}
+                    <FormattedMessage id="header.message.table.experience" />
+                  </p>
+                  <p>
+                    {" "}
+                    <FormattedMessage id="header.message.table.aexperience" />{" "}
+                  </p>
+                </div>
               </div>
               <div className="tableInputs">
-                <span>Github:</span>
-                <span>
-                  <a href="https://github.com/danjaw1999/">danjaw1999</a>
-                </span>
+                <div className="block">
+                  <p>Github: </p>
+                  <p>
+                    <a href="https://github.com/danjaw1999/">danjaw1999</a>
+                  </p>
+                </div>
               </div>
             </div>
             <div className="rightSiteInTable">
               <div className="tableInputs">
-                {" "}
-                <span>
-                  {" "}
-                  <FormattedMessage id="header.message.table.age" />
-                </span>
-                <span>21</span>
+                <div className="block">
+                  <p>
+                    {" "}
+                    <FormattedMessage id="header.message.table.age" />
+                  </p>
+                  <p>21</p>
+                </div>
               </div>
               <div className="tableInputs">
-                {" "}
-                <span>
-                  {" "}
-                  <FormattedMessage id="header.message.table.address" />
-                </span>
-                <span>
-                  <FormattedMessage id="header.message.table.aaddress" />
-                </span>
+                <div className="block">
+                  <p>
+                    <FormattedMessage id="header.message.table.address" />
+                  </p>
+                  <p>
+                    <FormattedMessage id="header.message.table.aaddress" />
+                  </p>
+                </div>
               </div>
               <div className="tableInputs">
-                {" "}
-                <span>
-                  {" "}
-                  <FormattedMessage id="header.message.table.freelance" />
-                </span>
-                <span>
-                  {" "}
-                  <FormattedMessage id="header.message.table.afreelance" />{" "}
-                </span>
+                <div className="block">
+                  <p>
+                    <FormattedMessage id="header.message.table.freelance" />
+                  </p>
+                  <p>
+                    <FormattedMessage id="header.message.table.afreelance" />
+                  </p>
+                </div>
               </div>
               <div className="tableInputs">
-                <span>LinkedIn :</span>
-                <span>
-                  <a href="https://www.linkedin.com/in/daniel-jaworski1999/">
-                    danjaw1999
-                  </a>
-                </span>
+                <div className="block">
+                  <p>LinkedIn: </p>
+                  <p>
+                    <a href="https://www.linkedin.com/in/daniel-jaworski1999/">
+                      danjaw1999
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           <div className="buttonUnderTable">
-            <button>
-              {" "}
-              <FormattedMessage id="header.message.table.button" />
+            <button
+              style={{ backgroundColor: props.color, borderColor: props.color }}
+            >
+              <a
+                href="https://drive.google.com/drive/folders/1yiJBW9NpYtMghYDq3qRuUemei-mnyXH5?usp=sharing"
+                target="_blank"
+              >
+                <FormattedMessage id="header.message.table.button" />
+              </a>
             </button>
           </div>
         </div>
