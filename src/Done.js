@@ -57,7 +57,7 @@ const Done = (props) => {
             <img src={p1} alt="GitHub Profiles" />
             <div className="themeBox">
               <p style={{ color: props.color }}>
-                <FormattedMessage id="done.p1.text" />
+                <FormattedMessage id="done.p2.text" />
               </p>
               <button style={{ backgroundColor: props.color }}>
                 <a
