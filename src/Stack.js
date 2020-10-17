@@ -11,7 +11,7 @@ import gulp from "./assets/gulp.png";
 import mongo from "./assets/mongo.png";
 import php from "./assets/php.jpg";
 import babel from "./assets/babel.png";
-import webpack from "./assets/webpack.jpg";
+import webpack from "./assets/webpack.png";
 
 const Stack = (props) => {
   return (

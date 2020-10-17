@@ -17,7 +17,7 @@ const Done = (props) => {
           <h2 className="secondaryTitle">
             <FormattedMessage id="done.portf" />
           </h2>
-          <hr />
+          <hr style={{ borderColor: props.color }} />
         </div>
         <div className="doneProjects">
           <div className="box">

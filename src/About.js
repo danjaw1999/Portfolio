@@ -6,7 +6,7 @@ const About = (props) => {
     <div className="About">
       <div className="container">
         <div className="photoInAbout">
-          <img src={face} />
+          <img src={face} alt="picture" />
         </div>
         <div className="discover">
           <span style={{ color: props.color }} className="mainTitle">

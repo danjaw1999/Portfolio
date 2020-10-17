@@ -55,5 +55,9 @@
   "done.p2.text": "GitHub Profil",
   "done.p1.text": "PacMan Gra",
   "done.p4.text": "Shop By Jawor",
-  "done.p5.text": "Zaplanuj jedznoko"
+  "done.p5.text": "Zaplanuj jedznoko",
+  "errors.email": "Zły email",
+  "errors.name": "Wpisz imię",
+  "errors.message": "Pole nie może być puste",
+  "send.button": "WYŚLIJ WIADOMOŚĆ"
 }

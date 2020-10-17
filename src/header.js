@@ -90,7 +90,7 @@ const Header = (props) => {
             </div>
           </div>
           <div className="nameandphoto">
-            <img src={face}></img>
+            <img src={face} alt="picture face"></img>
             <span style={{ color: props.color }}>Jaworski Daniel</span>
             <p>Javascript-React Developer 💻</p>
           </div>
