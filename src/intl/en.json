@@ -49,5 +49,11 @@
   "contact.button": "SEND MESSAGE",
   "contact.git": "Get In Touch",
   "contact.contactMe": "Contact Me",
-  "footer.text": "All Right Reserved © 2020" 
+  "footer.text": "All Right Reserved © 2020" ,
+  "done.p3.text": "Donate Things",
+  "done.tech": "Used technologies",
+  "done.p2.text": "GitHub Profiles",
+  "done.p1.text": "PacMan Game",
+  "done.p4.text": "Shop By Jawor",
+  "done.p5.text": "Planning food"
 }

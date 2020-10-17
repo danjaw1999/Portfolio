@@ -29,55 +29,55 @@ const Stack = (props) => {
         <div className="technologyStack">
           <div className="leftStack">
             <div className="skill">
-              <img src={html} />
+              <img alt="html-photo" src={html} />
               <p>HTML</p>
             </div>
             <div className="skill">
-              <img src={css} />
+              <img alt="css-photo" src={css} />
               <p>CSS</p>
             </div>
             <div className="skill">
-              <img src={mongo} />
+              <img alt="mongo-photo" src={mongo} />
               <p>MONGO</p>
             </div>
             <div className="skill">
-              <img src={babel} />
+              <img alt="babel-photo" src={babel} />
               <p>BABEL</p>
             </div>
           </div>
           <div className="midStack">
             <div className="skill">
-              <img src={js} />
+              <img alt="javascript-photo" src={js} />
               <p>JAVASCRIPT</p>
             </div>
             <div className="skill">
-              <img src={react} />
+              <img alt="react photo" src={react} />
               <p>REACT</p>
             </div>
             <div className="skill">
-              <img src={node} />
+              <img alt="node photo" src={node} />
               <p>Node.js</p>
             </div>
             <div className="skill">
-              <img src={npm} />
+              <img alt="npm photo" src={npm} />
               <p>NPM</p>
             </div>
           </div>
           <div className="rightStack">
             <div className="skill">
-              <img src={gulp} />
+              <img alt="gulp photo" src={gulp} />
               <p>GULP</p>
             </div>
             <div className="skill">
-              <img src={git} />
+              <img alt="git photo" src={git} />
               <p>GIT</p>
             </div>
             <div className="skill">
-              <img src={webpack} />
+              <img alt="webpack photo" src={webpack} />
               <p>WEBPACK</p>
             </div>
             <div className="skill">
-              <img src={php} />
+              <img alt="php photo" src={php} />
               <p>PHP</p>
             </div>
           </div>

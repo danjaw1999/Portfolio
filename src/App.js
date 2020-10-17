@@ -23,7 +23,7 @@ function App() {
   };
   return (
     <IntlProvider locale={locale} messages={messages[locale]}>
-      <select id="locale" name="locale" onChange={handleSetLocale}>
+      {/* <select id="locale" name="locale" onChange={handleSetLocale}>
         <option value="en">en</option>
         <option value="pl">pl</option>
       </select>
@@ -34,7 +34,7 @@ function App() {
         <option value="#28a745">green</option>
         <option value="#e83e8c">pink</option>
         <option value="#dc3545">red</option>
-      </select>
+      </select> */}
       <div className="App">
         <div className="switchButton">
           <img src={Setting} />
