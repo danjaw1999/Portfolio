@@ -725,10 +725,12 @@ header.header {
       }
     }
   }
-  .flag,
-  .buttonFlag {
+  .flag {
     height: 28px;
     background-color: #1f2233;
+    border: none;
+    outline: none;
+    margin-right: 5px;
   }
   .x {
     font-size: 2rem;
@@ -757,6 +759,7 @@ header.header {
         margin: 4px 5px;
         cursor: pointer;
         border: none;
+        outline: none;
       }
       .yellow {
         background-color: #fdd05a;

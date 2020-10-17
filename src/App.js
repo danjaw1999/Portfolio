@@ -27,11 +27,6 @@ function App() {
     const switcher = document.querySelector(".switcher");
     switcher.classList.toggle("show");
   };
-  // const handleDelete = (e) => {
-  //   const switcher = document.querySelector(".switcher");
-  //   switcher.classList.add("hide");
-  //   switcher.classList.remove("show");
-  // };
 
   return (
     <IntlProvider locale={locale} messages={messages[locale]}>
@@ -59,28 +54,23 @@ function App() {
             </p>
             <span>LANGUAGE SWITCHER</span>
             <div>
-              <button
-                className="buttonflag"
+              <input
+                type="image"
+                src={pl}
                 value="pl"
-                style={{ backgroundColor: "#1f2233", border: "none" }}
+                alt="Poland"
+                className="flag"
                 onClick={handleSetLocale}
-              >
-                <img
-                  value="pl"
-                  onClick={handleSetLocale}
-                  src={pl}
-                  alt="Poland"
-                  className="flag"
-                />
-              </button>
-              <button
+              />
+
+              <input
+                type="image"
+                src={en}
                 value="en"
-                className="buttonflag"
+                alt="England"
+                className="flag"
                 onClick={handleSetLocale}
-                style={{ backgroundColor: "#1f2233", border: "none" }}
-              >
-                <img src={en} alt="England" className="flag" />
-              </button>
+              />
             </div>
 
             <span>COLOR SWITCHER</span>
