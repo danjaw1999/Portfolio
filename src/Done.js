@@ -34,11 +34,7 @@ const Done = (props) => {
                   GITHUB
                 </a>
               </button>
-              <button
-                style={{ backgroundColor: props.color }}
-                disabled="disabled"
-                className="disabled"
-              >
+              <button disabled="disabled" className="disabled">
                 <a>LIVE</a>
               </button>
               <h3>
@@ -126,11 +122,7 @@ const Done = (props) => {
                   GITHUB
                 </a>
               </button>
-              <button
-                style={{ backgroundColor: props.color }}
-                disabled="disabled"
-                className="disabled"
-              >
+              <button disabled="disabled" className="disabled">
                 <a>LIVE</a>
               </button>
               <h3>
@@ -158,11 +150,7 @@ const Done = (props) => {
                   GITHUB
                 </a>
               </button>
-              <button
-                style={{ backgroundColor: props.color }}
-                disabled="disabled"
-                className="disabled"
-              >
+              <button disabled="disabled" className="disabled">
                 <a>LIVE</a>
               </button>
               <h3>
