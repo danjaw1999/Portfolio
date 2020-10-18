@@ -6,12 +6,9 @@ const Experience = (props) => {
     <div className="experience">
       <div className="container">
         <div className="textInExperience">
-          <span className="mainTitle" style={{ color: props.color }}>
+          <p className="mainTitle" style={{ color: props.color }}>
             <FormattedMessage id="header.message.exp.exp" />
-          </span>
-          <h2 className="secondaryTitle">
-            <FormattedMessage id="header.message.exp.pod" />
-          </h2>
+          </p>
           <hr style={{ borderColor: props.color }}></hr>
         </div>
         <section id="cd-timeline" class="cd-container">

@@ -11,12 +11,9 @@ const Done = (props) => {
     <div className="done">
       <div className="container">
         <div className="textInDone">
-          <span className="mainTitle" style={{ color: props.color }}>
+          <p className="mainTitle" style={{ color: props.color }}>
             <FormattedMessage id="done.works" />
-          </span>
-          <h2 className="secondaryTitle">
-            <FormattedMessage id="done.portf" />
-          </h2>
+          </p>
           <hr style={{ borderColor: props.color }} />
         </div>
         <div className="doneProjects">

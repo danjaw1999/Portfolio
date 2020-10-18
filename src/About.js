@@ -11,14 +11,10 @@ const About = (props) => {
           <img src={face} alt="picture" />
         </div>
         <div className="discover">
-          <span style={{ color: props.color }} className="mainTitle">
-            {" "}
-            <FormattedMessage id="header.message.about.discover" />
-          </span>
-          <h2 className="secondaryTitle">
+          <p style={{ color: props.color }} className="mainTitle">
             {" "}
             <FormattedMessage id="header.message.about.aboutMe" />
-          </h2>
+          </p>
           <hr style={{ borderColor: props.color }}></hr>
           <p className="aboutMe">
             {" "}

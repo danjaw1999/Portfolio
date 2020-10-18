@@ -7,12 +7,9 @@ const Contact = (props) => {
     <div className="contact">
       <div className="container">
         <div className="textInContact">
-          <span className="mainTitle" style={{ color: props.color }}>
-            <FormattedMessage id="contact.git" />
-          </span>
-          <h2 className="secondaryTitle">
+          <p className="mainTitle" style={{ color: props.color }}>
             <FormattedMessage id="contact.contactMe" />
-          </h2>
+          </p>
           <hr style={{ borderColor: props.color }}></hr>
         </div>
         <div className="formAndData">
@@ -21,8 +18,7 @@ const Contact = (props) => {
               <div className="leftSiteData">
                 <div className="padding">
                   <FormattedMessage id="contact.loc" />
-                  <p>Katowice, PL</p>
-                  <p>Wiertnicza 22/17</p>
+                  <p style={{ paddingBottom: 25 }}>Katowice, PL</p>
                 </div>
                 <p>
                   <a
@@ -142,7 +138,7 @@ const Contact = (props) => {
               }) => (
                 <form
                   onSubmit={handleSubmit}
-                  action="https://getform.io/f/454a04a2-f96a-4d19-b1f4-566d2d3a2ac3"
+                  action="https://formspree.io/f/myyberer"
                   method="POST"
                 >
                   <div className="webInput">
