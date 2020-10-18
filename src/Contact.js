@@ -126,7 +126,7 @@ const Contact = (props) => {
               }}
               onSubmit={(values, { setSubmitting }) => {
                 setTimeout(() => {
-                  alert("Message has been send.");
+                  alert("Message was send.");
                   setSubmitting(false);
                 }, 400);
               }}

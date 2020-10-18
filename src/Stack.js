@@ -47,7 +47,7 @@ const Stack = (props) => {
           </div>
           <div className="midStack">
             <div className="skill">
-              <img alt="javascript-photo" src={js} />
+              <img alt="javascript-photo" src={js} style={{ width: 120 }} />
               <p>JAVASCRIPT</p>
             </div>
             <div className="skill">
@@ -59,13 +59,13 @@ const Stack = (props) => {
               <p>Node.js</p>
             </div>
             <div className="skill">
-              <img alt="npm photo" src={npm} />
+              <img alt="npm photo" src={npm} style={{ width: 200 }} />
               <p>NPM</p>
             </div>
           </div>
           <div className="rightStack">
             <div className="skill">
-              <img alt="gulp photo" src={gulp} />
+              <img alt="gulp photo" src={gulp} style={{ width: 80 }} />
               <p>GULP</p>
             </div>
             <div className="skill">
@@ -73,7 +73,7 @@ const Stack = (props) => {
               <p>GIT</p>
             </div>
             <div className="skill">
-              <img alt="webpack photo" src={webpack} />
+              <img alt="webpack photo" src={webpack} style={{ width: 100 }} />
               <p>WEBPACK</p>
             </div>
             <div className="skill">

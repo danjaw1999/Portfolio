@@ -1,6 +1,8 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
 import face from "./assets/face.jpg";
+import github from "./assets/github2.png";
+import linkedin from "./assets/linkedin.png";
 const About = (props) => {
   return (
     <div className="About">
@@ -63,7 +65,9 @@ const About = (props) => {
                 <div className="block">
                   <p>Github: </p>
                   <p>
-                    <a href="https://github.com/danjaw1999/">danjaw1999</a>
+                    <a href="https://github.com/danjaw1999/">
+                      <img src={github} height="25" style={{ marginTop: -5 }} />
+                    </a>
                   </p>
                 </div>
               </div>
@@ -103,7 +107,11 @@ const About = (props) => {
                   <p>LinkedIn: </p>
                   <p>
                     <a href="https://www.linkedin.com/in/daniel-jaworski1999/">
-                      danjaw1999
+                      <img
+                        src={linkedin}
+                        height="25"
+                        style={{ marginTop: -5 }}
+                      />
                     </a>
                   </p>
                 </div>
