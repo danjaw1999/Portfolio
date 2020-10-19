@@ -4,7 +4,7 @@ import { Formik } from "formik";
 
 const Contact = (props) => {
   return (
-    <div className="contact">
+    <div className="contact" name="contact">
       <div className="container">
         <div className="textInContact">
           <p className="mainTitle" style={{ color: props.color }}>
@@ -136,60 +136,60 @@ const Contact = (props) => {
                 handleSubmit,
                 isSubmitting
               }) => (
-                <form
-                  onSubmit={handleSubmit}
-                  action="https://formspree.io/f/myyberer"
-                  method="POST"
-                >
-                  <div className="webInput">
-                    <input
-                      type="text"
-                      name="name"
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      value={values.name}
-                      className="input"
-                      placeholder="NAME"
-                    />
-                    <p>{errors.name && touched.name && errors.name}</p>
-                  </div>
-                  <div className="webInput">
-                    <input
-                      type="email"
-                      name="email"
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      value={values.email}
-                      className="input email"
-                      placeholder="EMAIL"
-                    />
-                    <p>{errors.email && touched.email && errors.email}</p>
-                  </div>
-                  <div className="webInput">
-                    <textarea
-                      type="textarea"
-                      cols="50"
-                      name="message"
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      value={values.message}
-                      className="input"
-                      placeholder="MESSAGE"
-                      style={{ fontFamily: "Open Sans" }}
-                    />
-                    <p>{errors.message && touched.message && errors.message}</p>
-                  </div>
-
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="btn"
-                    style={{ backgroundColor: props.color }}
+                  <form
+                    onSubmit={handleSubmit}
+                    action="https://formspree.io/f/myyberer"
+                    method="POST"
                   >
-                    <FormattedMessage id="send.button" />
-                  </button>
-                </form>
-              )}
+                    <div className="webInput">
+                      <input
+                        type="text"
+                        name="name"
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        value={values.name}
+                        className="input"
+                        placeholder="NAME"
+                      />
+                      <p>{errors.name && touched.name && errors.name}</p>
+                    </div>
+                    <div className="webInput">
+                      <input
+                        type="email"
+                        name="email"
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        value={values.email}
+                        className="input email"
+                        placeholder="EMAIL"
+                      />
+                      <p>{errors.email && touched.email && errors.email}</p>
+                    </div>
+                    <div className="webInput">
+                      <textarea
+                        type="textarea"
+                        cols="50"
+                        name="message"
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        value={values.message}
+                        className="input"
+                        placeholder="MESSAGE"
+                        style={{ fontFamily: "Open Sans" }}
+                      />
+                      <p>{errors.message && touched.message && errors.message}</p>
+                    </div>
+
+                    <button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="btn"
+                      style={{ backgroundColor: props.color }}
+                    >
+                      <FormattedMessage id="send.button" />
+                    </button>
+                  </form>
+                )}
             </Formik>
           </div>
         </div>

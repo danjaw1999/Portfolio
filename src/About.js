@@ -5,7 +5,7 @@ import github from "./assets/github2.png";
 import linkedin from "./assets/linkedin.png";
 const About = (props) => {
   return (
-    <div className="About">
+    <div className="About" name="about">
       <div className="container">
         <div className="photoInAbout">
           <img src={face} alt="picture" />

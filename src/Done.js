@@ -8,7 +8,7 @@ import p5 from "./assets/p5.png";
 
 const Done = (props) => {
   return (
-    <div className="done">
+    <div className="done" name="portfolio">
       <div className="container">
         <div className="textInDone">
           <p className="mainTitle" style={{ color: props.color }}>
@@ -37,7 +37,7 @@ const Done = (props) => {
               <h3>
                 <FormattedMessage id="done.tech" />
               </h3>
-              <ul class="content-skills">
+              <ul className="content-skills">
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>JavaScript</li>
@@ -71,7 +71,7 @@ const Done = (props) => {
               <h3>
                 <FormattedMessage id="done.tech" />
               </h3>
-              <ul class="content-skills">
+              <ul className="content-skills">
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>JavaScript</li>
@@ -100,7 +100,7 @@ const Done = (props) => {
               <h3>
                 <FormattedMessage id="done.tech" />
               </h3>
-              <ul class="content-skills">
+              <ul className="content-skills">
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>JavaScript</li>
@@ -125,7 +125,7 @@ const Done = (props) => {
               <h3>
                 <FormattedMessage id="done.tech" />
               </h3>
-              <ul class="content-skills">
+              <ul className="content-skills">
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>JavaScript</li>
@@ -153,7 +153,7 @@ const Done = (props) => {
               <h3>
                 <FormattedMessage id="done.tech" />
               </h3>
-              <ul class="content-skills">
+              <ul className="content-skills">
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>JavaScript</li>

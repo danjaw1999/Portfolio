@@ -7,7 +7,7 @@ import instagram from "./assets/instagram.png";
 
 const Footer = () => {
   return (
-    <section className="footer">
+    <section className="footer" name="footer">
       <div className="container">
         <div className="textInFooter">
           <div className="socials">

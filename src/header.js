@@ -1,7 +1,7 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
-import { BrowserRouter as Router, Link } from "react-router-dom";
 import video from "./assets/video.mp4";
+import { Link as ScrollLink } from "react-scroll";
 import face from "./assets/face.jpg";
 function handleClickBurger(e) {
   const burger = document.querySelector(".burger");
@@ -16,7 +16,7 @@ function handleClickBurger(e) {
     } else {
       link.style.animation = `navLinkFade 0.5s ease forwards ${
         index / 7 + 0.3
-      }s`;
+        }s`;
     }
   });
   burger.classList.toggle("toggle");
@@ -30,7 +30,7 @@ const Header = (props) => {
       </video>
       <div className="darkVideo"></div>
       <header className="header">
-        <div className="container">
+        <div className="container" name="home">
           <div className="upperSiteHeader">
             <div className="magPag">
               <div className="left-site">
@@ -38,40 +38,46 @@ const Header = (props) => {
                 <span style={{ color: props.color }}>Daniel</span>
               </div>
               <div className="nav-bar">
-                <Router>
-                  <ul>
-                    <li>
-                      <Link style={{ color: props.color }}>
-                        <FormattedMessage id="header.message.menu.home" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link>
-                        <FormattedMessage id="header.message.menu.about" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link>
-                        <FormattedMessage id="header.message.menu.services" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link>
-                        <FormattedMessage id="header.message.menu.resume" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link>
-                        <FormattedMessage id="header.message.menu.portfolio" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link>
-                        <FormattedMessage id="header.message.menu.contact" />
-                      </Link>
-                    </li>
-                  </ul>
-                </Router>
+
+                <ul>
+                  <li>
+                    <ScrollLink to="home" spy={true}
+                      smooth={true} style={{ color: props.color }} >
+                      <FormattedMessage id="header.message.menu.home" />
+                    </ScrollLink>
+                  </li>
+                  <li>
+                    <ScrollLink spy={true}
+                      smooth={true} to="about">
+                      <FormattedMessage id="header.message.menu.about" />
+                    </ScrollLink>
+                  </li>
+                  <li>
+                    <ScrollLink spy={true}
+                      smooth={true} to="stack">
+                      <FormattedMessage id="header.message.menu.services" />
+                    </ScrollLink>
+                  </li>
+                  <li>
+                    <ScrollLink spy={true}
+                      smooth={true} to="resume">
+                      <FormattedMessage id="header.message.menu.resume" />
+                    </ScrollLink>
+                  </li>
+                  <li>
+                    <ScrollLink spy={true}
+                      smooth={true} to="portfolio">
+                      <FormattedMessage id="header.message.menu.portfolio" />
+                    </ScrollLink>
+                  </li>
+                  <li>
+                    <ScrollLink spy={true}
+                      smooth={true} to="contact">
+                      <FormattedMessage id="header.message.menu.contact" />
+                    </ScrollLink>
+                  </li>
+                </ul>
+
               </div>
               <div className="burger" onClick={handleClickBurger}>
                 <div

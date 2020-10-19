@@ -33,7 +33,7 @@ function App() {
       <div className="App">
         <div className="switchButton">
           <div className="spinning">
-            <img classname="setting" src={Setting} onClick={handleSwitcher} />
+            <img className="setting" src={Setting} onClick={handleSwitcher} />
           </div>
           <div className="switcher">
             <p className="x" onClick={handleSwitcher}>

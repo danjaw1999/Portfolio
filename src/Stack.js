@@ -15,7 +15,7 @@ import webpack from "./assets/webpack.png";
 
 const Stack = (props) => {
   return (
-    <div className="stack">
+    <div className="stack" name="stack">
       <div className="container">
         <div className="textInStack">
           <span className="mainTitle" style={{ color: props.color }}>
