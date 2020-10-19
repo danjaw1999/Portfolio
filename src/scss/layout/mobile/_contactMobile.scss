@@ -1,0 +1,149 @@
+.contact {
+    background-color: rgba(31, 34, 51, 0.99);
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    .container {
+      width: 95%;
+      margin: 0 auto;
+      .textInContact {
+        .mainTitle {
+          font-size: 2.5rem;
+          letter-spacing: 0.5rem;
+          font-weight: bold;
+        }
+        hr {
+          width: 50px;
+          margin-top: -2vh;
+          margin-bottom: 2vh;
+          margin-left: 0;
+        }
+      }
+      .formAndData {
+        display: flex;
+        flex-direction: column;
+        .leftSiteContact {
+          display: flex;
+          flex-direction: column;
+          .dataInContact {
+            display: flex;
+            flex-direction: column;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+            .leftSiteData {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              .padding {
+                font-size: 2rem;
+                display: flex;
+                flex-direction: column;
+                color: white;
+                padding: 15px 0 10px 20px;
+                font-weight: bold;
+  
+                p:nth-of-type(1) {
+                  margin-bottom: -1.7rem;
+                }
+                .onlyOneInPadding {
+                  padding-bottom: 3rem;
+                }
+                p {
+                  font-weight: lighter;
+                  z-index: 2;
+                  font-size: 1.6rem;
+                }
+              }
+  
+              p {
+                svg {
+                  height: 35px;
+                  margin-right: 1rem;
+                  margin-top: 2rem;
+                }
+              }
+            }
+          }
+        }
+        .rightSiteContact {
+          form {
+            button {
+              border-radius: 5px;
+              border: none;
+              color: white;
+              padding: 2rem 4rem;
+              cursor: pointer;
+              font-size: 1.5rem;
+            }
+            .webInput {
+              position: relative;
+              display: flex;
+              flex-direction: row;
+              min-width: 320px;
+              margin: 0 auto;
+              border-radius: 2px;
+              padding: 1.4rem 2rem 1.6rem;
+              margin-bottom: 1.2rem;
+              background: $input-background;
+              &:after {
+                content: "";
+                position: absolute;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                z-index: 999;
+                height: 2px;
+                border-bottom-left-radius: 2px;
+                border-bottom-right-radius: 2px;
+                background-position: 0% 0%;
+                background: linear-gradient(
+                  to right,
+                  #b294ff,
+                  #57e6e6,
+                  #feffb8,
+                  #57e6e6,
+                  #b294ff,
+                  #57e6e6
+                );
+                background-size: 500% auto;
+                animation: gradient 3s linear infinite;
+              }
+              p {
+                font-size: 1.3rem;
+                color: red;
+              }
+            }
+  
+            .webInput input,
+            textarea {
+              flex-grow: 1;
+              color: $input-text-active;
+              font-size: 1.8rem;
+              line-height: 2.4rem;
+              resize: none;
+              vertical-align: middle;
+              border-style: none;
+              background: transparent;
+              outline: none;
+              &::-webkit-input-placeholder {
+                color: $input-text-inactive;
+              }
+            }
+            .input {
+              flex-grow: 1;
+              color: $input-text-active;
+              font-size: 1.8rem;
+              line-height: 2.4rem;
+              vertical-align: middle;
+              background: none;
+              &::-webkit-input-placeholder {
+                color: $input-text-inactive;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

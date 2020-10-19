@@ -1,0 +1,138 @@
+.switchButton {
+    position: fixed;
+    top: 30%;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    z-index: 9999;
+    background: #1f2233;
+    color: #fbf4e0;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 5px 4px rgba(8, 29, 51, 1);
+    -moz-box-shadow: 0px 0px 5px 4px rgba(8, 29, 51, 1);
+    box-shadow: 0px 0px 5px 4px rgba(8, 29, 51, 1);
+    span {
+      font-size: 2rem;
+    }
+    .spinning {
+      img {
+        height: 30px;
+        margin-top: 10px;
+        -webkit-animation-name: spin;
+        -webkit-animation-duration: 4000ms;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+  
+        -moz-animation-name: spin;
+        -moz-animation-duration: 4000ms;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+  
+        -ms-animation-name: spin;
+        -ms-animation-duration: 4000ms;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-timing-function: linear;
+  
+        animation-name: spin;
+        animation-duration: 4000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+  
+        @-ms-keyframes spin {
+          from {
+            -ms-transform: rotate(0deg);
+          }
+          to {
+            -ms-transform: rotate(360deg);
+          }
+        }
+        @-moz-keyframes spin {
+          from {
+            -moz-transform: rotate(0deg);
+          }
+          to {
+            -moz-transform: rotate(360deg);
+          }
+        }
+        @-webkit-keyframes spin {
+          from {
+            -webkit-transform: rotate(0deg);
+          }
+          to {
+            -webkit-transform: rotate(360deg);
+          }
+        }
+        @keyframes spin {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+    .flag {
+      height: 28px;
+      background-color: #1f2233;
+      border: none;
+      outline: none;
+      margin-right: 5px;
+    }
+    .x {
+      font-size: 2rem;
+      position: absolute;
+      top: -15px;
+      right: 0px;
+      cursor: pointer;
+    }
+    .switcher {
+      position: fixed;
+      top: 28%;
+      right: -100%;
+      width: 200px;
+      z-index: 9999;
+      cursor: default;
+      background: #1f2233;
+      color: #fff;
+      border-radius: 4px 0 0 4px;
+      padding: 16px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      div {
+        button.col {
+          height: 28px;
+          width: 38px;
+          border-radius: 14px 0;
+          margin: 4px 5px;
+          cursor: pointer;
+          border: none;
+          outline: none;
+        }
+        .yellow {
+          background-color: #fdd05a;
+        }
+        .orange {
+          background-color: #f1a433;
+        }
+        .purple {
+          background-color: #6610f2;
+        }
+        .green {
+          background-color: #28a745;
+        }
+        .pink {
+          background-color: #e83e8c;
+        }
+        .red {
+          background-color: #dc3545;
+        }
+      }
+    }
+    .show {
+      right: 0%;
+    }
+    .hide {
+      right: -100%;
+    }
+  }
