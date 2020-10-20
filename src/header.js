@@ -39,37 +39,37 @@ const Header = (props) => {
               <section className="nav-bar">
                 <ul>
                   <li>
-                    <ScrollLink to="home" spy={true}
+                    <ScrollLink to="home" spy={true} offset={-50} isDynamic={true} delay={200}
                       smooth={true} style={{ color: props.color }} >
                       <FormattedMessage id="header.message.menu.home" />
                     </ScrollLink>
                   </li>
                   <li>
-                    <ScrollLink spy={true}
+                    <ScrollLink spy={true} offset={-50} isDynamic={true} delay={200}
                       smooth={true} to="about">
                       <FormattedMessage id="header.message.menu.about" />
                     </ScrollLink>
                   </li>
                   <li>
-                    <ScrollLink spy={true}
+                    <ScrollLink spy={true} offset={-50} isDynamic={true} delay={200}
                       smooth={true} to="stack">
                       <FormattedMessage id="header.message.menu.services" />
                     </ScrollLink>
                   </li>
                   <li>
-                    <ScrollLink spy={true}
+                    <ScrollLink spy={true} offset={-50} isDynamic={true} delay={200}
                       smooth={true} to="resume">
                       <FormattedMessage id="header.message.menu.resume" />
                     </ScrollLink>
                   </li>
                   <li>
                     <ScrollLink spy={true}
-                      smooth={true} to="portfolio">
+                      smooth={true} to="portfolio" offset={-50} isDynamic={true} delay={200}>
                       <FormattedMessage id="header.message.menu.portfolio" />
                     </ScrollLink>
                   </li>
                   <li>
-                    <ScrollLink spy={true}
+                    <ScrollLink spy={true} offset={-50} isDynamic={true} delay={200}
                       smooth={true} to="contact">
                       <FormattedMessage id="header.message.menu.contact" />
                     </ScrollLink>
