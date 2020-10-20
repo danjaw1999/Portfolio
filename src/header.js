@@ -25,10 +25,9 @@ function handleClickBurger(e) {
 const Header = (props) => {
   return (
     <>
-      <video loop muted autoPlay playsInline>
+      <video loop muted autoPlay playsInline className="video">
         <source src={video} type="video/mp4" />
       </video>
-      <div className="darkVideo"></div>
       <header className="header">
         <div className="container" name="home">
           <div className="upperSiteHeader">
@@ -37,8 +36,7 @@ const Header = (props) => {
                 <span>Jaworski</span>
                 <span style={{ color: props.color }}>Daniel</span>
               </div>
-              <div className="nav-bar">
-
+              <section className="nav-bar">
                 <ul>
                   <li>
                     <ScrollLink to="home" spy={true}
@@ -78,7 +76,7 @@ const Header = (props) => {
                   </li>
                 </ul>
 
-              </div>
+              </section>
               <div className="burger" onClick={handleClickBurger}>
                 <div
                   className="line1"
@@ -96,7 +94,7 @@ const Header = (props) => {
             </div>
           </div>
           <div className="nameandphoto">
-            <img src={face} alt="picture face"></img>
+            <img src={face} alt="face"></img>
             <span style={{ color: props.color }}>Jaworski Daniel</span>
             <p>Javascript-React Developer 💻</p>
           </div>

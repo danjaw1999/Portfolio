@@ -26,7 +26,7 @@ const Done = (props) => {
               <button style={{ backgroundColor: props.color }}>
                 <a
                   href="https://github.com/danjaw1999/Oddaj-Rzeczy"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                 >
                   GITHUB
                 </a>
@@ -55,7 +55,7 @@ const Done = (props) => {
               <button style={{ backgroundColor: props.color }}>
                 <a
                   href="https://github.com/danjaw1999/githubProfiles"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                 >
                   GITHUB
                 </a>
@@ -63,7 +63,7 @@ const Done = (props) => {
               <button style={{ backgroundColor: props.color }}>
                 <a
                   href="https://danjaw1999.github.io/githubProfiles/index.html"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                 >
                   LIVE
                 </a>
@@ -87,13 +87,13 @@ const Done = (props) => {
               <button style={{ backgroundColor: props.color }}>
                 <a
                   href="https://github.com/danjaw1999/ZaplanujJedzonko"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                 >
                   GITHUB
                 </a>
               </button>
               <button style={{ backgroundColor: props.color }}>
-                <a href="https://danjaw1999.github.io/ZaplanujJedzonko/development/index.html">
+                <a href="https://danjaw1999.github.io/ZaplanujJedzonko/development/index.html" rel="noopener noreferrer">
                   LIVE
                 </a>
               </button>
@@ -115,7 +115,7 @@ const Done = (props) => {
                 <FormattedMessage id="done.p1.text" />
               </p>
               <button style={{ backgroundColor: props.color }}>
-                <a href="https://github.com/danjaw1999/PacMan" target="_blank">
+                <a href="https://github.com/danjaw1999/PacMan" rel="noopener noreferrer" target="_blank">
                   GITHUB
                 </a>
               </button>
@@ -142,7 +142,7 @@ const Done = (props) => {
               <button style={{ backgroundColor: props.color }}>
                 <a
                   href="https://github.com/danjaw1999/ShopByJawor"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                 >
                   GITHUB
                 </a>

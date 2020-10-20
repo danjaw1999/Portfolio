@@ -8,7 +8,7 @@ const About = (props) => {
     <div className="About" name="about">
       <div className="container">
         <div className="photoInAbout">
-          <img src={face} alt="picture" />
+          <img src={face} alt="face" />
         </div>
         <div className="discover">
           <p style={{ color: props.color }} className="mainTitle">
@@ -62,7 +62,7 @@ const About = (props) => {
                   <p>Github: </p>
                   <p>
                     <a href="https://github.com/danjaw1999/">
-                      <img src={github} height="25" style={{ marginTop: -5 }} />
+                      <img src={github} height="25" alt="github" style={{ marginTop: -5 }} />
                     </a>
                   </p>
                 </div>
@@ -105,7 +105,7 @@ const About = (props) => {
                     <a href="https://www.linkedin.com/in/daniel-jaworski1999/">
                       <img
                         src={linkedin}
-                        height="25"
+                        height="25" alt="linkedin"
                         style={{ marginTop: -5 }}
                       />
                     </a>
@@ -120,7 +120,7 @@ const About = (props) => {
             >
               <a
                 href="https://drive.google.com/drive/folders/1yiJBW9NpYtMghYDq3qRuUemei-mnyXH5?usp=sharing"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <FormattedMessage id="header.message.table.button" />
               </a>

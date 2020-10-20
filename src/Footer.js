@@ -11,19 +11,19 @@ const Footer = () => {
       <div className="container">
         <div className="textInFooter">
           <div className="socials">
-            <a href="https://www.facebook.com/danjaw1999/" target="_blank">
+            <a href="https://www.facebook.com/danjaw1999/" rel="noopener noreferrer" target="_blank">
               <img src={fb} className="fb" alt="facebook icon" />
             </a>
             <a
               href="https://www.linkedin.com/in/daniel-jaworski1999"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               <img src={linkedin} alt="linkedin icon" />
             </a>
-            <a href="https://github.com/danjaw1999" target="_blank">
+            <a href="https://github.com/danjaw1999" rel="noopener noreferrer" target="_blank">
               <img src={github} alt="github icon" />
             </a>
-            <a href="https://www.instagram.com/danjaw1999/" target="_blank">
+            <a href="https://www.instagram.com/danjaw1999/" rel="noopener noreferrer" target="_blank">
               <img src={instagram} alt="instagram icon" />
             </a>
           </div>

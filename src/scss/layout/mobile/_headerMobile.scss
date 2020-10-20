@@ -1,4 +1,4 @@
-video {
+.video {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -8,20 +8,9 @@ video {
     width: 100vw;
     height: 100vh;
     z-index: -2;
+    filter:brightness(30%);
   }
-  
-  .darkVideo {
-    position: absolute;
-    z-index: -1;
-    background-color: rgba(0, 0, 0, 0.8);
-    top: 0%;
-    left: 0%;
-    min-width: 100%;
-    min-height: 100%;
-    width: 100vw;
-    // height: 972px;
-    height: 100vh;
-  }
+
   header.header {
     .container {
       .upperSiteHeader {
