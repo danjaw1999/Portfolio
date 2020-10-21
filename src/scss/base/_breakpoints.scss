@@ -23,12 +23,12 @@ and (max-width: 750px) {
     }
 }
 @mixin smallScreen {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1023px){
         @content;
     }
 }
 @mixin notebook {
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1024px) and (max-width: 1199px){
         @content;
     }
 }

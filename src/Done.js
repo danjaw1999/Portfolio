@@ -5,6 +5,7 @@ import p2 from "./assets/p2.png";
 import p3 from "./assets/p3.png";
 import p4 from "./assets/p4.png";
 import p5 from "./assets/p5.png";
+import p6 from "./assets/p6.png";
 
 const Done = (props) => {
   return (
@@ -159,6 +160,36 @@ const Done = (props) => {
                 <li>JavaScript</li>
                 <li>React</li>
                 <li>JSON-Server</li>
+              </ul>
+            </div>
+          </div>
+          <div className="box">
+            <img src={p6} alt="Portfolio" className="portfolio"/>
+            <div className="themeBox">
+              <p style={{ color: props.color }}>
+                <FormattedMessage id="done.p6.text" />
+              </p>
+              <button style={{ backgroundColor: props.color }}>
+                <a
+                  href="https://github.com/danjaw1999/Portfolio"
+                  target="_blank" rel="noopener noreferrer"
+                >
+                  GITHUB
+                </a>
+              </button>
+              <button style={{ backgroundColor: props.color }}>
+                <a href="https://jaworskidaniel.pl"
+                  target="_blank" rel="noopener noreferrer">LIVE</a>
+              </button>
+              <h3>
+                <FormattedMessage id="done.tech" />
+              </h3>
+              <ul className="content-skills">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>React Router</li>
               </ul>
             </div>
           </div>

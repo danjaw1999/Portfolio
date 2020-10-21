@@ -8,21 +8,39 @@
       align-items: center;
       width: 95%;
       margin: 0 auto;
+      @include desktop{
+        flex-direction: row;
+        width: 1140px;
+      }
       .photoInAbout {
         padding-top: 7rem;
+        @include desktop{
+         padding-top: 3rem;
+        }
         img {
           -webkit-box-shadow: 0px 0px 5px 8px rgba(51, 79, 107, 1);
           -moz-box-shadow: 0px 0px 5px 8px rgba(51, 79, 107, 1);
           box-shadow: 0px 0px 5px 8px rgba(51, 79, 107, 1);
           height: 400px;
+          @include desktop{
+           height: 431px;
+           margin-right: 40px;
+           margin-top: -40px;
+          }
         }
       }
       .discover {
         margin-top: 2rem;
+        @include desktop{
+         margin-top: -1rem
+        }
         .mainTitle {
           font-size: 4.5rem;
           font-weight: bold;
-          
+          @include desktop{
+            font-size: 3.2rem;
+            margin-top: 9rem;
+          }
           
         }
         hr {
@@ -33,20 +51,33 @@
           @include smallScreen{
             width: 100px;
            }
+           @include desktop{
+           width: 50px;
+           margin-top: -2vh;
+          }
         }
         .aboutMe {
           color: white;
           font-size: 1.8rem;
           width: 92%;
+          line-height: 1.8;
           @include notebook{
             font-size: 2.3rem;
-              
            }
+           @include desktop{
+           font-size: 1.5rem;
+          }
         }
       }
       .tableInAbout {
         display: flex;
         flex-direction: column;
+        @include desktop{
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          width: 635px;
+        }
         .leftSiteInTable,
         .rightSiteInTable {
           font-family: "Open Sans", sans-serif;
@@ -60,6 +91,9 @@
               font-size: 2.3rem;
                 
              }
+             @include desktop{
+             font-size: 1.5rem;
+            }
             .block {
               display: flex;
               p {
@@ -70,8 +104,14 @@
                     @include notebook{
                       height: 35px;
                      }
+                     @include desktop{
+                     height: 25px;
+                    }
                   }
                 }
+              }
+              p:nth-of-type(1){
+                font-weight: bold;
               }
               p:nth-of-type(2) {
                 margin-left: 5px;
@@ -81,6 +121,10 @@
         }
         .rightSiteInTable {
           margin-top: -2vh;
+          @include desktop{
+           margin-top: 0vh;
+          padding-right: 100px;
+          }
         }
       }
       .buttonUnderTable {
@@ -103,6 +147,10 @@
           @include notebook{
            font-size: 2rem;
            padding: 2rem 4rem;     
+          }
+          @include desktop{
+           padding: 1.4rem 0;
+           font-size: 1.4rem;
           }
         }
       }

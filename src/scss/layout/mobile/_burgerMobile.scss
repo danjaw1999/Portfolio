@@ -35,12 +35,17 @@
     display: block;
     cursor: pointer;
     z-index: 4;
+    @include desktop{
+      display: none;
+    }
+    
   }
   .burger div {
     width: 25px;
     height: 2.5px;
     margin: 5px;
     transition: all 0.3s ease;
+    
   }
   .nav-bar {
     position: absolute;
@@ -55,10 +60,29 @@
     z-index: 2;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+    @include desktop{
+      align-items: flex-end;
+      justify-content: center;
+      top: 10px;
+      width: 700px;
+      right: 1px;
+      height: 5vh;
+      transform: translateX(0%);
+      background-color: transparent;
+      z-index: 6;
+    }
 
     ul {
       margin-top: 4vh;
+      @include desktop{
+        flex-direction: row;
+        display: flex;
+        margin-top: 1vh;
+      }
       li:first-of-type {
+        @include desktop{
+         margin-top: 0vh;
+        }
         margin-top: 8vh;
       }
       li {
@@ -69,6 +93,10 @@
         font-size: 1.7rem;
         font-weight: bold;
         cursor: pointer;
+        @include desktop{
+         opacity: 1;
+         margin-bottom: 0!important;
+        }
 
         a {
           text-decoration: none;
