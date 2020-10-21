@@ -33,8 +33,11 @@ const Header = (props) => {
           <div className="upperSiteHeader">
             <div className="magPag">
               <div className="left-site">
+              <ScrollLink to="home" spy={true} offset={-50} isDynamic={true} delay={200}
+                      smooth={true} style={{ color: props.color }} >
                 <span>Jaworski</span>
                 <span style={{ color: props.color }}>Daniel</span>
+              </ScrollLink>
               </div>
               <section className="nav-bar">
                 <ul>
