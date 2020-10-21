@@ -12,21 +12,42 @@
           font-size: 2.5rem;
           letter-spacing: 0.5rem;
           font-weight: bold;
+          @include smallScreen{
+            font-size: 3.3rem;
+            margin-top: -0.5rem;
+          }
         }
         hr {
           width: 50px;
           margin-top: -2vh;
           margin-bottom: 2vh;
           margin-left: 0;
+          @include smallScreen{
+            width: 100px;
+           }
         }
       }
       .cd-container {
         .cd-timeline-block {
           p {
             font-size: 1.5rem;
+            @include notebook{
+              font-size: 1.8rem;
+                
+             }
           }
           h2 {
             font-size: 2rem;
+            @include notebook{
+              font-size: 2.4rem;
+                
+             }
+          }
+          span, li{
+            @include notebook{
+              font-size: 2rem;
+                
+             }
           }
         }
       }

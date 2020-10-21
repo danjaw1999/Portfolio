@@ -1,5 +1,6 @@
 @import './base/font';
 @import './base/color';
+@import './base/breakpoints';
 @import './base/resetAndBody';
 
 //Header Mobile
@@ -24,7 +25,6 @@
 
 //Switcher Mobile
 @import './layout/mobile/switcherMobile';
-
 
 //Timeline RWD
 @import './layout/timeLine';

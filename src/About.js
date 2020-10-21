@@ -62,7 +62,7 @@ const About = (props) => {
                   <p>Github: </p>
                   <p>
                     <a href="https://github.com/danjaw1999/">
-                      <img src={github} height="25" alt="github" style={{ marginTop: -5 }} />
+                      <img src={github} alt="github" style={{ marginTop: -5 }} />
                     </a>
                   </p>
                 </div>
@@ -105,7 +105,7 @@ const About = (props) => {
                     <a href="https://www.linkedin.com/in/daniel-jaworski1999/">
                       <img
                         src={linkedin}
-                        height="25" alt="linkedin"
+                        alt="linkedin"
                         style={{ marginTop: -5 }}
                       />
                     </a>

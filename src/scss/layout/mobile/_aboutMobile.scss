@@ -22,17 +22,26 @@
         .mainTitle {
           font-size: 4.5rem;
           font-weight: bold;
+          
+          
         }
         hr {
           width: 50px;
           margin-left: 0;
           margin-top: -4vh;
           margin-bottom: 2vh;
+          @include smallScreen{
+            width: 100px;
+           }
         }
         .aboutMe {
           color: white;
           font-size: 1.8rem;
           width: 92%;
+          @include notebook{
+            font-size: 2.3rem;
+              
+           }
         }
       }
       .tableInAbout {
@@ -47,10 +56,22 @@
           .tableInputs {
             font-size: 1.6rem;
             color: white;
+            @include notebook{
+              font-size: 2.3rem;
+                
+             }
             .block {
               display: flex;
               p {
                 margin-bottom: 0.3rem;
+                a{
+                  img{
+                    height: 25px;
+                    @include notebook{
+                      height: 35px;
+                     }
+                  }
+                }
               }
               p:nth-of-type(2) {
                 margin-left: 5px;
@@ -79,6 +100,10 @@
           text-align: center;
           border-style: solid;
           border-width: 1px;
+          @include notebook{
+           font-size: 2rem;
+           padding: 2rem 4rem;     
+          }
         }
       }
     }

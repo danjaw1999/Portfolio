@@ -9,6 +9,15 @@
     height: 100vh;
     z-index: -2;
     filter:brightness(30%);
+    @include mobileLandscape{
+      height: 138vh;
+    }
+    @include tablet{
+      height: 138vh;
+    }
+    @include mobileLandscape2{
+      height: 138vh;
+    }
   }
 
   header.header {
@@ -49,7 +58,12 @@
         img {
           border-radius: 50%;
           height: 200px;
-          width: 200px;
+          width: 180px;
+          @include notebook{
+            height: 350px;
+            width: 300px;
+              
+           }
           -webkit-box-shadow: 3px 1px 17px 16px rgba(26, 33, 71, 1);
           -moz-box-shadow: 3px 1px 17px 16px rgba(26, 33, 71, 1);
           box-shadow: 3px 1px 17px 16px rgba(26, 33, 71, 1);
@@ -58,12 +72,20 @@
           font-size: 4rem;
           font-weight: 900;
           margin-top: 1rem;
+          @include notebook{
+            font-size: 5.3rem;
+              
+           }
         }
         p {
           font-size: 2rem;
           color: white;
           font-weight: bolder;
           padding-bottom: 12vh;
+          @include notebook{
+            font-size: 3rem;
+              
+           }
         }
       }
     }
