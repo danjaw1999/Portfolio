@@ -134,12 +134,11 @@ const Contact = (props) => {
                 handleChange,
                 handleBlur,
                 handleSubmit,
-                isSubmitting
+                isSubmitting, resetForm
               }) => (
                   <form
-                    onSubmit={handleSubmit}
                     action="https://formspree.io/f/myyberer"
-                    method="POST"
+                    method="POST" onSubmit={handleSubmit, handleBlur}
                   >
                     <div className="webInput">
                       <input
