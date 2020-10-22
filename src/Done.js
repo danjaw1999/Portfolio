@@ -18,8 +18,10 @@ const Done = (props) => {
           <hr style={{ borderColor: props.color }} />
         </div>
         <div className="doneProjects">
+          <div className="hideDiv"></div>
           <div className="box">
             <img src={p3} alt="Oddaj Rzeczy" />
+
             <div className="themeBox">
               <p style={{ color: props.color }}>
                 <FormattedMessage id="done.p3.text" />
@@ -164,7 +166,7 @@ const Done = (props) => {
             </div>
           </div>
           <div className="box">
-            <img src={p6} alt="Portfolio" className="portfolio"/>
+            <img src={p6} alt="Portfolio" className="portfolio" />
             <div className="themeBox">
               <p style={{ color: props.color }}>
                 <FormattedMessage id="done.p6.text" />

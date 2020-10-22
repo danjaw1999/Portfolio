@@ -32,6 +32,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
         @include desktop{
           flex-direction: row;
           justify-content: space-between;
@@ -177,6 +178,14 @@
             }
           }
         }
+            .hideDiv{
+              height: 1400px;
+              width: 500px;
+              z-index: 5;
+              position: absolute;
+              top: 0px;
+              right: -500px;
+            }
         .box:hover {
           .themeBox {
             height: 95%;
