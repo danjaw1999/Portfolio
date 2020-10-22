@@ -96,7 +96,7 @@ const Done = (props) => {
                 </a>
               </button>
               <button style={{ backgroundColor: props.color }}>
-                <a href="https://danjaw1999.github.io/ZaplanujJedzonko/development/index.html" rel="noopener noreferrer">
+                <a href="https://danjaw1999.github.io/ZaplanujJedzonko/development/index.html" target="_blank" rel="noopener noreferrer">
                   LIVE
                 </a>
               </button>
