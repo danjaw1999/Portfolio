@@ -63,10 +63,10 @@
             flex-direction: column;
             align-items: center;
             opacity: 0;
-            bottom: 0;
+            top: 0;
             left: 0;
-            width: 100%;
             height: 0;
+            width: 100%;
             background-color: rgba(36, 40, 61, 0.85);
             transform: translateX(100%);
             transition: transform 0.5s ease-out;
@@ -179,8 +179,9 @@
           }
         }
             .hideDiv{
-              height: 1350px;
+              height: 1050px;
               width: 500px;
+              background-color: #24293c;
               z-index: 5;
               position: absolute;
               top: 0px;
@@ -196,7 +197,8 @@
             @include desktop{
               height: 100%;
               margin-bottom: -25px;
-    padding-top: 25px;
+              padding-top: 25px;
+              width: 550px;
             }
           }
           
