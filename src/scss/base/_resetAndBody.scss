@@ -11,15 +11,21 @@
     -moz-osx-font-smoothing: grayscale;
     margin: 0;
     padding: 0;
+    overflow-y: auto;
     font-family: "PT Sans", sans-serif;
     overflow-x: hidden;
     font-size: 10px;
   }
   body{
     height: 100%;
+    overflow-y: overlay;
+  }
+  body::-webkit-scrollbar{
+    display: none;
   }
   * {
     transition: all 0.4s ease-in-out;
+    
   }
   a,
 a:visited,
