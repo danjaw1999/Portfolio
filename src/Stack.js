@@ -1,7 +1,7 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
 import html from "./assets/html.svg";
-import css from "./assets/css.svg";
+import css from "./assets/css.png";
 import git from "./assets/git.png";
 import js from "./assets/js.png";
 import node from "./assets/node.svg";

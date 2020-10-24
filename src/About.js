@@ -2,7 +2,7 @@ import React from "react";
 import { FormattedMessage } from "react-intl";
 import face from "./assets/face.jpg";
 import github from "./assets/github2.png";
-import linkedin from "./assets/linkedin.png";
+import linkedin2 from "./assets/linkedin2.png";
 const About = (props) => {
   return (
     <section className="About" name="about">
@@ -104,7 +104,7 @@ const About = (props) => {
                   <p>
                     <a href="https://www.linkedin.com/in/daniel-jaworski1999/" target="_blank" rel="noopener noreferrer">
                       <img
-                        src={linkedin}
+                        src={linkedin2}
                         alt="linkedin"
                         style={{ marginTop: -5 }}
                       />

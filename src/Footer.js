@@ -18,13 +18,13 @@ const Footer = () => {
               href="https://www.linkedin.com/in/daniel-jaworski1999"
               target="_blank" rel="noopener noreferrer"
             >
-              <img src={linkedin} alt="linkedin icon" />
+              <img src={linkedin} alt="linkedin icon" className="ld" />
             </a>
             <a href="https://github.com/danjaw1999" rel="noopener noreferrer" target="_blank">
-              <img src={github} alt="github icon" />
+              <img src={github} alt="github icon" className="github" />
             </a>
             <a href="https://www.instagram.com/danjaw1999/" rel="noopener noreferrer" target="_blank">
-              <img src={instagram} alt="instagram icon" />
+              <img src={instagram} alt="instagram icon" className="ig" />
             </a>
           </div>
           <span>

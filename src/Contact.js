@@ -1,22 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { FormattedMessage } from "react-intl";
 import { Formik, Field } from "formik";
 
 const Contact = (props) => {
-  const validate = values => {
+  const [disable, setDisable] = useState(true);
+  const validate = (values) => {
     const errors = {};
     if (
-      !/(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/i.test(values.email)
+      !/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i.test(values.email)
     ) {
+      setDisable(true)
       errors.email = <FormattedMessage id="errors.email" />;
-    } else if (!values.name) {
-      errors.name = <FormattedMessage id="errors.name" />;
-    } else if (!values.message) {
-      errors.message = <FormattedMessage id="errors.message" />;
+    } else {
+      setDisable(false)
     }
-    return errors;
-
-    return errors;
+    if (!values.name) {
+      setDisable(true)
+      errors.name = <FormattedMessage id="errors.name" />;
+    } else {
+      setDisable(false)
+    }
+    if (!values.message) {
+      setDisable(true)
+      errors.message = <FormattedMessage id="errors.message" />;
+    } else {
+      setDisable(false)
+    }
+    return errors
   };
   return (
     <section className="contact" name="contact">
@@ -69,7 +79,9 @@ const Contact = (props) => {
                 <div className="padding">
                   <FormattedMessage id="contact.ema" />
                   <p className="onlyOneInPadding">
-                    daniel.jaworski1999@gmail.com
+                    <a href="mailto:daniel.jaworski1999@gmail.com">
+                      daniel.jaworski1999@gmail.com
+                    </a>
                   </p>
                 </div>
                 <p>
@@ -96,7 +108,7 @@ const Contact = (props) => {
               <div className="leftSiteData">
                 <div className="padding">
                   <FormattedMessage id="contact.phone" />
-                  <p className="onlyOneInPadding">+48 788684524</p>
+                  <p className="onlyOneInPadding"> <a href="tel:+48 788-684-524">+48 788684524</a></p>
                 </div>
                 <p>
                   <a href="tel:+48 788-684-524">
@@ -135,13 +147,11 @@ const Contact = (props) => {
                 errors,
                 touched,
                 handleChange,
-                handleBlur,
-                handleSubmit,
                 isSubmitting
               }) => (
                   <form
                     action="https://formspree.io/f/myyberer"
-                    method="POST" onSubmit={handleSubmit, handleChange}
+                    method="POST"
                   >
                     <div className="webInput">
                       <Field
@@ -174,12 +184,11 @@ const Contact = (props) => {
                       />
                       <p>{errors.message && touched.message && errors.message}</p>
                     </div>
-
                     <button
                       type="submit"
-                      disabled={isSubmitting}
                       className="btn"
-                      style={{ backgroundColor: props.color }}
+                      disabled={disable}
+                      style={{ backgroundColor: disable === true ? "grey" : props.color }}
                     >
                       <FormattedMessage id="send.button" />
                     </button>

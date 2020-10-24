@@ -25,17 +25,19 @@ const Done = (props) => {
               <p style={{ color: props.color }}>
                 <FormattedMessage id="done.p3.text" />
               </p>
-              <button style={{ backgroundColor: props.color }}>
-                <a
-                  href="https://github.com/danjaw1999/Oddaj-Rzeczy"
-                  target="_blank" rel="noopener noreferrer"
-                >
+              <a
+                href="https://github.com/danjaw1999/Oddaj-Rzeczy"
+                target="_blank" rel="noopener noreferrer"
+              >
+                <button style={{ backgroundColor: props.color }} className="firstButtonInDone">
                   GITHUB
-                </a>
-              </button>
-              <button disabled="disabled" className="disabled">
-                <a>LIVE</a>
-              </button>
+                </button>
+              </a>
+              <a>
+                <button disabled="disabled" className="disabled but2">
+                  LIVE
+                </button>
+              </a>
               <h3>
                 <FormattedMessage id="done.tech" />
               </h3>
@@ -54,22 +56,22 @@ const Done = (props) => {
               <p style={{ color: props.color }}>
                 <FormattedMessage id="done.p2.text" />
               </p>
-              <button style={{ backgroundColor: props.color }}>
-                <a
-                  href="https://github.com/danjaw1999/githubProfiles"
-                  target="_blank" rel="noopener noreferrer"
-                >
+              <a
+                href="https://github.com/danjaw1999/githubProfiles"
+                target="_blank" rel="noopener noreferrer"
+              >
+                <button style={{ backgroundColor: props.color }} className="firstButtonInDone">
                   GITHUB
-                </a>
               </button>
-              <button style={{ backgroundColor: props.color }}>
-                <a
-                  href="https://danjaw1999.github.io/githubProfiles/index.html"
-                  target="_blank" rel="noopener noreferrer"
-                >
+              </a>
+              <a
+                href="https://danjaw1999.github.io/githubProfiles/index.html"
+                target="_blank" rel="noopener noreferrer"
+              >
+                <button style={{ backgroundColor: props.color }} className="but2">
                   LIVE
-                </a>
               </button>
+              </a>
               <h3>
                 <FormattedMessage id="done.tech" />
               </h3>
@@ -86,19 +88,20 @@ const Done = (props) => {
               <p style={{ color: props.color }}>
                 <FormattedMessage id="done.p5.text" />
               </p>
-              <button style={{ backgroundColor: props.color }}>
-                <a
-                  href="https://github.com/danjaw1999/ZaplanujJedzonko"
-                  target="_blank" rel="noopener noreferrer"
-                >
+              <a
+                href="https://github.com/danjaw1999/ZaplanujJedzonko"
+                target="_blank" rel="noopener noreferrer"
+              >
+                <button style={{ backgroundColor: props.color }} className="firstButtonInDone">
                   GITHUB
-                </a>
               </button>
-              <button style={{ backgroundColor: props.color }}>
-                <a href="https://danjaw1999.github.io/ZaplanujJedzonko/development/index.html" target="_blank" rel="noopener noreferrer">
-                  LIVE
-                </a>
+              </a>
+              <a href="https://danjaw1999.github.io/ZaplanujJedzonko/development/index.html" target="_blank" rel="noopener noreferrer">
+
+
+                <button style={{ backgroundColor: props.color }} className="but2">  LIVE
               </button>
+              </a>
               <h3>
                 <FormattedMessage id="done.tech" />
               </h3>
@@ -116,14 +119,16 @@ const Done = (props) => {
               <p style={{ color: props.color }}>
                 <FormattedMessage id="done.p1.text" />
               </p>
-              <button style={{ backgroundColor: props.color }}>
-                <a href="https://github.com/danjaw1999/PacMan" rel="noopener noreferrer" target="_blank">
+              <a href="https://github.com/danjaw1999/PacMan" rel="noopener noreferrer" target="_blank">
+                <button style={{ backgroundColor: props.color }} className="firstButtonInDone">
                   GITHUB
-                </a>
               </button>
-              <button disabled="disabled" className="disabled">
-                <a>LIVE</a>
+              </a>
+              <a>
+                <button disabled="disabled" className="disabled but2" >
+                  LIVE
               </button>
+              </a>
               <h3>
                 <FormattedMessage id="done.tech" />
               </h3>
@@ -141,17 +146,19 @@ const Done = (props) => {
               <p style={{ color: props.color }}>
                 <FormattedMessage id="done.p4.text" />
               </p>
-              <button style={{ backgroundColor: props.color }}>
-                <a
-                  href="https://github.com/danjaw1999/ShopByJawor"
-                  target="_blank" rel="noopener noreferrer"
-                >
+              <a
+                href="https://github.com/danjaw1999/ShopByJawor"
+                target="_blank" rel="noopener noreferrer"
+              >
+                <button style={{ backgroundColor: props.color }} className="firstButtonInDone">
                   GITHUB
-                </a>
               </button>
-              <button disabled="disabled" className="disabled">
-                <a>LIVE</a>
-              </button>
+              </a>
+              <a>
+                <button disabled="disabled" className="disabled but2">
+                  LIVE
+                </button>
+              </a>
               <h3>
                 <FormattedMessage id="done.tech" />
               </h3>
@@ -170,18 +177,20 @@ const Done = (props) => {
               <p style={{ color: props.color }}>
                 <FormattedMessage id="done.p6.text" />
               </p>
-              <button style={{ backgroundColor: props.color }}>
-                <a
-                  href="https://github.com/danjaw1999/Portfolio"
-                  target="_blank" rel="noopener noreferrer"
-                >
+              <a
+                href="https://github.com/danjaw1999/Portfolio"
+                target="_blank" rel="noopener noreferrer"
+              >
+                <button style={{ backgroundColor: props.color }} className="firstButtonInDone">
                   GITHUB
-                </a>
               </button>
-              <button style={{ backgroundColor: props.color }}>
-                <a href="https://jaworskidaniel.pl"
-                  target="_blank" rel="noopener noreferrer">LIVE</a>
+              </a>
+              <a href="https://jaworskidaniel.pl"
+                target="_blank" rel="noopener noreferrer">
+                <button style={{ backgroundColor: props.color }} className="but2">
+                  LIVE
               </button>
+              </a>
               <h3>
                 <FormattedMessage id="done.tech" />
               </h3>

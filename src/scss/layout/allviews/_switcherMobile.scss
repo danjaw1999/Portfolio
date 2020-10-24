@@ -5,6 +5,7 @@
     width: 50px;
     height: 50px;
     text-align: center;
+    opacity: 0.3;
     z-index: 9999;
     background: #1f2233;
     color: #fbf4e0;
@@ -135,4 +136,7 @@
     .hide {
       right: -100%;
     }
+  }
+  .switchButton:hover{
+    opacity: 1;
   }

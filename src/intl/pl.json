@@ -54,6 +54,7 @@
   "done.p5.text": "Zaplanuj jedznoko",
   "done.p6.text": "Portfolio",
   "errors.email": "Zły email",
+  "errors.disabled": "Uzupełnij pola",
   "errors.name": "Wpisz imię",
   "errors.message": "Pole nie może być puste",
   "send.button": "WYŚLIJ WIADOMOŚĆ"

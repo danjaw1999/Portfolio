@@ -6,9 +6,9 @@ const Experience = (props) => {
     <section className="experience" name="resume">
       <div className="container">
         <div className="textInExperience">
-          <p className="mainTitle" style={{ color: props.color }}>
+          <h1 className="mainTitle" style={{ color: props.color }}>
             <FormattedMessage id="header.message.exp.exp" />
-          </p>
+          </h1>
           <hr style={{ borderColor: props.color }}></hr>
         </div>
         <section id="cd-timeline" className="cd-container">
