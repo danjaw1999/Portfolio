@@ -15,7 +15,7 @@ import webpack from "./assets/webpack.png";
 
 const Stack = (props) => {
   return (
-    <div className="stack" name="stack">
+    <section className="stack" name="stack">
       <div className="container">
         <div className="textInStack">
           <span className="mainTitle" style={{ color: props.color }}>
@@ -83,7 +83,7 @@ const Stack = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Stack;

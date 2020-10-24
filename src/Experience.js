@@ -3,7 +3,7 @@ import { FormattedMessage } from "react-intl";
 
 const Experience = (props) => {
   return (
-    <div className="experience" name="resume">
+    <section className="experience" name="resume">
       <div className="container">
         <div className="textInExperience">
           <p className="mainTitle" style={{ color: props.color }}>
@@ -190,7 +190,7 @@ const Experience = (props) => {
           </div>
         </section>
       </div>
-    </div>
+    </section>
   );
 };
 export default Experience;

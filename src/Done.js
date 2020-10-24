@@ -9,7 +9,7 @@ import p6 from "./assets/p6.png";
 
 const Done = (props) => {
   return (
-    <div className="done" name="portfolio">
+    <section className="done" name="portfolio">
       <div className="container">
         <div className="textInDone">
           <p className="mainTitle" style={{ color: props.color }}>
@@ -18,7 +18,6 @@ const Done = (props) => {
           <hr style={{ borderColor: props.color }} />
         </div>
         <div className="doneProjects">
-          <div className="hideDiv"></div>
           <div className="box">
             <img src={p3} alt="Oddaj Rzeczy" />
 
@@ -197,7 +196,7 @@ const Done = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

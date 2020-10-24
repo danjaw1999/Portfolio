@@ -7,7 +7,7 @@ import instagram from "./assets/instagram.png";
 
 const Footer = () => {
   return (
-    <section className="footer" name="footer">
+    <footer className="footer" name="footer">
       <div className="container">
         <div className="textInFooter">
           <div className="socials">
@@ -33,7 +33,7 @@ const Footer = () => {
           </span>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 export default Footer;

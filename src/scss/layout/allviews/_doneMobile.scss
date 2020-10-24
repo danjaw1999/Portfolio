@@ -43,6 +43,7 @@
           height: 280px;
           margin-bottom: 1rem;
           position: relative;
+          overflow: hidden;
                   @include smallScreen{
                     
                       width: 650px;
@@ -178,15 +179,6 @@
             }
           }
         }
-            .hideDiv{
-              height: 1050px;
-              width: 500px;
-              background-color: #24293c;
-              z-index: 2;
-              position: absolute;
-              top: 0px;
-              right: -500px;
-            }
         .box:hover {
           .themeBox {
             height: 95%;

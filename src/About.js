@@ -5,7 +5,7 @@ import github from "./assets/github2.png";
 import linkedin from "./assets/linkedin.png";
 const About = (props) => {
   return (
-    <div className="About" name="about">
+    <section className="About" name="about">
       <div className="container">
         <div className="photoInAbout">
           <img src={face} alt="face" />
@@ -128,7 +128,7 @@ const About = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default About;
