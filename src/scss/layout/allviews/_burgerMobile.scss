@@ -63,10 +63,9 @@
     @include desktop{
       align-items: flex-end;
       justify-content: center;
-      top: 10px;
       width: 700px;
       right: 1px;
-      height: 5vh;
+      height: 86px;
       transform: translateX(0%);
       background-color: transparent;
       z-index: 6;
@@ -77,8 +76,10 @@
       margin-top: 4vh;
       @include desktop{
         flex-direction: row;
+        align-items: center;
         display: flex;
-        margin-top: 1vh;
+        margin-top: 0vh;
+        margin-bottom: 0;
       }
       li:first-of-type {
         @include desktop{
