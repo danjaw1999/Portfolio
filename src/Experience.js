@@ -22,6 +22,38 @@ const Experience = (props) => {
               className="cd-timeline-content"
               style={{ backgroundColor: props.color }}
             >
+              <h2>'Merce</h2>
+              <div className="timeline-content-info">
+                <span className="timeline-content-info-title">
+                  <i className="fa fa-certificate" aria-hidden="true"></i>
+                  Junior Frontend Developer
+                </span>
+                <span className="timeline-content-info-date">
+                  <i className="fa fa-calendar-o" aria-hidden="true"></i>
+                  <FormattedMessage id="header.message.exp.dateM" />
+                </span>
+              </div>
+              <p>
+                <FormattedMessage id="header.message.exp.descM" />
+              </p>
+              <ul className="content-skills">
+                <li>HTML5</li>
+                <li>SCSS</li>
+                <li>Angular</li>
+                <li>TypeScript</li>
+              </ul>
+            </div>
+          </div>
+          <div className="cd-timeline-block">
+            <div
+              className="cd-timeline-img cd-picture"
+              style={{ backgroundColor: props.color }}
+            ></div>
+
+            <div
+              className="cd-timeline-content"
+              style={{ backgroundColor: props.color }}
+            >
               <h2>Artlook Gallery</h2>
               <div className="timeline-content-info">
                 <span className="timeline-content-info-title">
